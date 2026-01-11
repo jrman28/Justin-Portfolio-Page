@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Ragland - Portfolio</title>
+    <meta name="description" content="Full Stack Developer Portfolio" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: "#393552",
+              secondary: "#7e789c",
+              "background-light": "#ffffff",
+              "background-dark": "#13141C",
+              "surface-light": "#f8f9fa",
+              "surface-dark": "#1E1F2A",
+              "code-bg-light": "#fbfbfb",
+              "code-bg-dark": "#0b0c11",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+              sans: ["Inter", "sans-serif"],
+            },
+            animation: {
+              'cursor-blink': 'cursor-blink 1s step-end infinite',
+            },
+            keyframes: {
+              'cursor-blink': {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        min-height: 100vh;
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+          width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #13141C; 
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #2D2E3A; 
+          border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #3E3F4E; 
+        }
+      }
+      
+      /* Grid Pattern Configuration */
+      .grid-pattern {
+          /* Default to Light Mode values (when no .dark class) */
+          background-image: radial-gradient(rgba(0, 0, 0, 0.22) 1.5px, transparent 1.5px);
+          background-size: 24px 24px;
+      }
+      
+      .dark .grid-pattern {
+          /* Dark Mode values */
+          background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1.5px, transparent 1.5px);
+      }
+      
+      .pattern-mask {
+          mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 50%, transparent 80%);
+          -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 50%, transparent 80%);
+      }
+      .glow-mask {
+           mask-image: radial-gradient(circle at center, black 30%, transparent 70%);
+          -webkit-mask-image: radial-gradient(circle at center, black 30%, transparent 70%);
+      }
+      
+      @keyframes blink {
+        0%, 50%, 100% { opacity: 1; }
+        25%, 75% { opacity: 0; }
+      }
+
+      .cursor {
+        animation: blink 1.2s infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@11.15.0",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-[#13141C] text-primary dark:text-gray-100 font-sans antialiased selection:bg-purple-500/30 selection:text-white transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
