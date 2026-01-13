@@ -37,7 +37,7 @@ export default function AboutSection() {
                 <p>
                   I’m Justin Ragland, a full stack developer focused on turning complex ideas into clear, usable products — and founder of{" "}
                   <a 
-                    href="https://raglandlabs.com"
+                    href="https://www.raglandlabs.com"
                     target="_blank"
                     rel="noreferrer"
                     className="font-medium text-inherit hover:text-purple-600 dark:hover:text-purple-400 transition-colors rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/40 focus-visible:ring-offset-1 focus-visible:ring-offset-white dark:focus-visible:ring-offset-[#23242f]"
