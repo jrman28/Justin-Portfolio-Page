@@ -7,7 +7,8 @@ const skills = [
   "Node.js",
   "AI SDK",
   "Claude SDK",
-  "Cloudflare"
+  "Cloudflare",
+  "React Native"
 ];
 
 export default function AboutSection() {
