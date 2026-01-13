@@ -6,7 +6,8 @@ const skills = [
   "Convex",
   "Node.js",
   "AI SDK",
-  "Claude SDK"
+  "Claude SDK",
+  "Cloudflare"
 ];
 
 export default function AboutSection() {
@@ -56,8 +57,8 @@ export default function AboutSection() {
         </div>
 
         {/* Core Expertise Card - Spans 1 column on lg, full width on md/sm */}
-        <div className="lg:col-span-1 p-6 md:p-8 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#23242f] shadow-md dark:shadow-black/20 flex flex-col">
-          <h3 className="font-mono text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-[0.2em] mb-6 md:mb-8">
+        <div className="lg:col-span-1 p-6 md:p-8 lg:py-6 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-[#23242f] shadow-md dark:shadow-black/20 flex flex-col lg:justify-center">
+          <h3 className="font-mono text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-[0.2em] mb-6 md:mb-8 lg:mb-6">
             Core Expertise
           </h3>
           <div className="flex flex-wrap gap-2 content-start">
