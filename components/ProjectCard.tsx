@@ -1,4 +1,3 @@
-import React from 'react';
 import { Project } from '../types';
 
 interface ProjectCardProps {
@@ -7,7 +6,7 @@ interface ProjectCardProps {
   onClick?: () => void;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, featured = false, onClick }) => {
+const ProjectCard = ({ project, featured = false, onClick }: ProjectCardProps) => {
   return (
     <div 
       onClick={(e) => {

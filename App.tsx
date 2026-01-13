@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, Variants, AnimatePresence, LayoutGroup } from 'framer-motion';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
@@ -11,13 +11,12 @@ import { projects } from './constants';
 
 type ViewState = 'home' | 'coming-soon' | 'notes';
 
-const App: React.FC = () => {
+const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [currentView, setCurrentView] = useState<ViewState>('home');
   const pendingScrollRef = useRef<string | null>(null);
   
   // Responsive breakpoints state for Framer Motion layout animations
-  const [isLg, setIsLg] = useState(false);
   const [isMd, setIsMd] = useState(false);
 
   const scrollToTarget = (target: string) => {
@@ -57,7 +56,6 @@ const App: React.FC = () => {
     // Responsive logic
     const handleResize = () => {
       const width = window.innerWidth;
-      setIsLg(width >= 1024);
       setIsMd(width >= 768);
     };
     

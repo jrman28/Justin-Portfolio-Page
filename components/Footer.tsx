@@ -1,9 +1,9 @@
-import React from 'react';
+import { MouseEvent } from 'react';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.startsWith('mailto:')) return;
     e.preventDefault();
     window.location.hash = href;

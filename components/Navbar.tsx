@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, MouseEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -7,7 +7,7 @@ interface NavbarProps {
   toggleTheme: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
+const Navbar = ({ isDarkMode, toggleTheme }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Prevent scrolling when menu is open
@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
     { icon: "fab fa-linkedin", href: "https://www.linkedin.com/in/justin-ragland-0b924125", label: "LinkedIn" }
   ];
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.startsWith('mailto:')) return;
     
     e.preventDefault();
