@@ -35,7 +35,16 @@ export default function AboutSection() {
               </h2>
               <div className="text-base sm:text-lg text-primary dark:text-gray-100 font-normal leading-relaxed space-y-4">
                 <p>
-                  I’m Justin Ragland, a full stack developer focused on turning complex ideas into clear, usable products. I enjoy working with startups, teams, and individuals to build software that’s thoughtful, scalable, and genuinely useful.
+                  I’m Justin Ragland, a full stack developer focused on turning complex ideas into clear, usable products — and founder of{" "}
+                  <a 
+                    href="https://raglandlabs.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium text-inherit hover:text-purple-600 dark:hover:text-purple-400 transition-colors rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/40 focus-visible:ring-offset-1 focus-visible:ring-offset-white dark:focus-visible:ring-offset-[#23242f]"
+                  >
+                    Ragland Labs
+                  </a>.
+                  I enjoy working with startups, teams, and individuals to build software that’s thoughtful, scalable, and genuinely useful.
                 </p>
                 <p>
                   I’m always learning, whether that’s refining a design system, exploring new tools, or finding better ways to solve familiar problems. Outside of work, I spend time with my family and stay active in my church. My faith keeps me grounded and focused on building things that matter.

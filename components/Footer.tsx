@@ -21,13 +21,31 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col space-y-4 md:items-end">
             <div className="flex space-x-6">
-              <a href="https://github.com/jrman28" className="text-gray-400 hover:text-primary dark:hover:text-white transition-colors" aria-label="Github">
+              <a 
+                href="https://github.com/jrman28" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="text-gray-400 hover:text-primary dark:hover:text-white transition-colors" 
+                aria-label="Github"
+              >
                 <i className="fab fa-github text-xl"></i>
               </a>
-              <a href="https://x.com/BTConnector" className="text-gray-400 hover:text-blue-500 transition-colors" aria-label="Twitter">
+              <a 
+                href="https://x.com/BTConnector" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="text-gray-400 hover:text-blue-500 transition-colors" 
+                aria-label="Twitter"
+              >
                 <i className="fab fa-twitter text-xl"></i>
               </a>
-              <a href="https://www.linkedin.com/in/justin-ragland-0b924125" className="text-gray-400 hover:text-blue-700 transition-colors" aria-label="LinkedIn">
+              <a 
+                href="https://www.linkedin.com/in/justin-ragland-0b924125" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="text-gray-400 hover:text-blue-700 transition-colors" 
+                aria-label="LinkedIn"
+              >
                 <i className="fab fa-linkedin text-xl"></i>
               </a>
             </div>

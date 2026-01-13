@@ -41,6 +41,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
     setIsMenuOpen(false);
   };
 
+  const themeToggleClasses = "p-2 text-gray-400 hover:text-purple-600 dark:text-gray-500 dark:hover:text-purple-400 transition-colors rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background-light dark:focus-visible:ring-offset-background-dark";
+
   return (
     <>
       <nav className="fixed top-0 inset-x-0 z-50 w-full backdrop-blur-xl bg-white/50 dark:bg-[#13141C]/50 border-b border-gray-200/30 dark:border-gray-800/30 transition-all duration-300">
@@ -73,8 +75,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
             </div>
             <button 
               onClick={toggleTheme}
-              className="p-2 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors focus:outline-none"
-              aria-label="Toggle theme"
+              className={themeToggleClasses}
+              aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
             >
               {isDarkMode ? (
                 <i className="fas fa-sun text-sm"></i>
@@ -88,8 +90,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           <div className="flex items-center space-x-4 md:hidden z-50">
             <button 
               onClick={toggleTheme}
-              className="p-2 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors focus:outline-none"
-              aria-label="Toggle theme"
+              className={themeToggleClasses}
+              aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
             >
               {isDarkMode ? (
                 <i className="fas fa-sun text-sm"></i>
@@ -130,8 +132,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
                 <div className="flex items-center space-x-4">
                     <button 
                       onClick={toggleTheme}
-                      className="p-2 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors focus:outline-none"
-                      aria-label="Toggle theme"
+                      className={themeToggleClasses}
+                      aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
                     >
                       {isDarkMode ? (
                         <i className="fas fa-sun text-sm"></i>
@@ -190,6 +192,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
                       <a 
                         key={social.label}
                         href={social.href}
+                        target="_blank"
+                        rel="noreferrer"
                         className="text-gray-400 hover:text-primary dark:hover:text-white transition-colors transform hover:scale-110 active:scale-95 duration-200 p-2"
                         aria-label={social.label}
                       >
