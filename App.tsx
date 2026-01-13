@@ -186,7 +186,7 @@ const App: React.FC = () => {
               
               {/* Hero Section */}
               <motion.div variants={itemVariants}>
-                <HeroSection isLg={isLg} />
+                <HeroSection />
               </motion.div>
 
               {/* Selected Works Section */}

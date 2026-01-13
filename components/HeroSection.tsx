@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import TerminalHeroCard from "./TerminalHeroCard";
 
-interface HeroSectionProps {
-  isLg: boolean;
-}
-
-export default function HeroSection({ isLg }: HeroSectionProps) {
+export default function HeroSection() {
   const [hasInteracted, setHasInteracted] = useState(false);
 
   useEffect(() => {
