@@ -12,7 +12,7 @@ import { projects } from './constants';
 type ViewState = 'home' | 'coming-soon' | 'notes';
 
 const App: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [currentView, setCurrentView] = useState<ViewState>('home');
   const pendingScrollRef = useRef<string | null>(null);
   
@@ -36,20 +36,21 @@ const App: React.FC = () => {
     // Theme logic
     const savedTheme = localStorage.getItem('theme');
     
-    if (savedTheme === 'light') {
-      setIsDarkMode(false);
-      document.documentElement.classList.remove('dark');
-    } else if (savedTheme === 'dark') {
+    if (savedTheme === 'dark') {
       setIsDarkMode(true);
       document.documentElement.classList.add('dark');
+    } else if (savedTheme === 'light') {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove('dark');
     } else {
+      // Default to system preference, otherwise Light
       const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (!systemPrefersDark && window.matchMedia('(prefers-color-scheme: light)').matches) {
-          setIsDarkMode(false);
-          document.documentElement.classList.remove('dark');
-      } else {
+      if (systemPrefersDark) {
           setIsDarkMode(true);
           document.documentElement.classList.add('dark');
+      } else {
+          setIsDarkMode(false);
+          document.documentElement.classList.remove('dark');
       }
     }
 
