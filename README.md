@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Justin Ragland - Portfolio
 
-# Run and deploy your AI Studio app
+A minimalist, high-performance portfolio site built with React, TypeScript, and Tailwind CSS.
 
-This contains everything you need to run your app locally.
+## Getting Started
 
-View your app in AI Studio: https://ai.studio/apps/drive/1I39E-aIdrRq4_jbQSRmZBb4SjXT5QESW
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-## Run Locally
+2.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
 
-**Prerequisites:**  Node.js
+3.  **Build for production:**
+    ```bash
+    npm run build
+    ```
 
+## Deployment on Cloudflare Pages
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This project is configured to use [Vite](https://vitejs.dev/) for bundling, which makes deployment on Cloudflare Pages straightforward.
+
+1.  **Push to GitHub/GitLab:** Ensure this repository is pushed to your git provider.
+2.  **Create a Project in Cloudflare Pages:**
+    *   Log in to the Cloudflare Dashboard and go to **Workers & Pages**.
+    *   Click **Create application** > **Pages** > **Connect to Git**.
+    *   Select this repository.
+3.  **Configure Build Settings:**
+    *   **Framework preset:** `Vite`
+    *   **Build command:** `npm run build`
+    *   **Build output directory:** `dist`
+4.  **Save and Deploy:** Click **Save and Deploy**. Cloudflare will build the site and provide a live URL.
+
+## Tech Stack
+
+*   **React 18**
+*   **TypeScript**
+*   **Vite**
+*   **Tailwind CSS** (via CDN for portability, configured in `index.html`)
+*   **Framer Motion** for animations
