@@ -32,7 +32,7 @@ export default function HeroSection() {
           layout="position"
           className="relative z-10 flex flex-col justify-center order-1 w-full max-w-[92vw] sm:max-w-xl mx-auto lg:mx-0 lg:max-w-none"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-primary dark:text-white mb-6 md:mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[0.95] tracking-tighter text-primary dark:text-white mb-6 md:mb-8">
             Building <br />
             <span 
               className="inline-block text-secondary dark:text-[#a097cc] [text-shadow:0_6px_16px_rgba(126,120,156,0.25),0_1px_2px_rgba(0,0,0,0.05)] dark:[text-shadow:0_0_24px_rgba(160,151,204,0.3),0_4px_12px_rgba(0,0,0,0.5)] transition-all duration-300"
