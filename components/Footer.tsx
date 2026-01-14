@@ -31,7 +31,7 @@ const Footer = () => {
                 <i className="fab fa-github text-xl"></i>
               </a>
               <a 
-                href="https://x.com/BTConnector" 
+                href="https://x.com/BTConnector_" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="text-gray-400 hover:text-blue-500 transition-colors" 

@@ -29,7 +29,7 @@ const Navbar = ({ isDarkMode, toggleTheme }: NavbarProps) => {
 
   const socialLinks = [
     { icon: "fab fa-github", href: "https://github.com/jrman28", label: "Github" },
-    { icon: "fab fa-twitter", href: "https://x.com/BTConnector", label: "Twitter" },
+    { icon: "fab fa-twitter", href: "https://x.com/BTConnector_", label: "Twitter" },
     { icon: "fab fa-linkedin", href: "https://www.linkedin.com/in/justin-ragland-0b924125", label: "LinkedIn" }
   ];
 

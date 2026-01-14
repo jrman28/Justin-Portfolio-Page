@@ -80,7 +80,7 @@ export default function TerminalHeroCard() {
           <div className="flex items-center">
             <button
               onClick={handleCopy}
-              className="group/btn relative flex items-center justify-center p-1.5 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-colors focus:outline-none focus:ring-1 focus:ring-purple-500/50"
+              className="group/btn relative flex items-center justify-center p-1.5 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-purple-500/50"
               aria-label={copied ? "Copied" : "Copy code"}
             >
               {copied ? (

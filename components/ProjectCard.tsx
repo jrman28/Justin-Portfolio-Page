@@ -21,7 +21,7 @@ const ProjectCard = ({ project, featured = false, onClick }: ProjectCardProps) =
           if (onClick) onClick();
         }
       }}
-      className="block group h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-500/50 rounded-lg"
+      className="block group h-full cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/50 rounded-lg"
     >
       <div 
         className={`

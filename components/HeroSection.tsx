@@ -54,7 +54,7 @@ export default function HeroSection() {
               href="mailto:hello@raglandlabs.com"
               onClick={handleInteraction}
               onFocus={handleInteraction}
-              className="relative group inline-flex items-center px-5 py-3 rounded-lg bg-white dark:bg-[#050505] border border-gray-200 dark:border-white/10 font-mono text-sm shadow-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-gray-300 dark:hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-purple-500/50 cursor-pointer overflow-hidden"
+              className="relative group inline-flex items-center px-5 py-3 rounded-lg bg-white dark:bg-[#050505] border border-gray-200 dark:border-white/10 font-mono text-sm shadow-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:border-gray-300 dark:hover:border-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/50 cursor-pointer overflow-hidden"
             >
               <AnimatePresence>
                 {!hasInteracted && (
