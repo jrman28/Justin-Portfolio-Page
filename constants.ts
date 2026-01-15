@@ -5,7 +5,7 @@ export const projects: Project[] = [
     title: "LedgerLane",
     description: "A workflow-driven billing and reconciliation platform for logistics teams, built to reduce invoice disputes and speed up month-end close.",
     tags: ["React", "Convex", "TypeScript"],
-    link: "#"
+    link: "https://ledger-lane-demo.pages.dev"
   },
   {
     title: "PulseRoute",

@@ -207,7 +207,13 @@ const App = () => {
                       <ProjectCard 
                         project={project} 
                         featured={index === 0} 
-                        onClick={showComingSoon}
+                        onClick={() => {
+                          if (project.link && project.link !== '#') {
+                            window.open(project.link, '_blank');
+                          } else {
+                            showComingSoon();
+                          }
+                        }}
                       />
                     </motion.div>
                   ))}
