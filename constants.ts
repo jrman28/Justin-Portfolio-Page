@@ -8,10 +8,10 @@ export const projects: Project[] = [
     link: "https://ledger-lane-demo.pages.dev"
   },
   {
-    title: "PulseRoute",
-    description: "A mobile booking and scheduling app that helps people discover classes, book sessions, and manage memberships in one place.",
+    title: "BitFlip",
+    description: "A TikTok-style infinite feed mobile app of retro microgames. Swipe up to play the next instant hit.",
     tags: ["React Native", "Expo", "TypeScript"],
-    link: "#"
+    link: "https://bitflip-arcade-demo.pages.dev/"
   },
   {
     title: "AegisOps",
