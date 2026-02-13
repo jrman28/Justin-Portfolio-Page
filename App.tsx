@@ -188,7 +188,7 @@ const App = () => {
               </motion.div>
 
               {/* Selected Works Section */}
-              <motion.div id="work" className="max-w-7xl mx-auto px-6 space-y-6 pt-12 pb-20 scroll-mt-24" variants={itemVariants}>
+              <motion.div id="work" className="max-w-7xl mx-auto px-6 space-y-6 pt-12 pb-12 md:pb-16 scroll-mt-24" variants={itemVariants}>
                 <div className="flex items-center justify-between mb-8">
                   <h2 className="font-mono text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-[0.2em] pl-1">
                     Selected Works

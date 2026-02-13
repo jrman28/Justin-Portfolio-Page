@@ -13,7 +13,7 @@ const skills = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 py-24 scroll-mt-16">
+    <section id="about" className="max-w-7xl mx-auto px-6 py-12 md:py-16 scroll-mt-16">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
         
         {/* About Me Card - Spans 2 columns on lg, full width on md/sm */}
