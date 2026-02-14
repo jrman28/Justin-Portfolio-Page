@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 const skills = [
   "React",
   "TypeScript",
@@ -22,7 +24,7 @@ export default function AboutSection() {
             {/* Headshot Image Component */}
             <div className="flex-shrink-0 self-center">
               <img 
-                src="https://ik.imagekit.io/xrtdefb8l/Portfolio_profile.jpg?updatedAt=1767990006410" 
+                src="https://ik.imagekit.io/xrtdefb8l/1771038102062.png" 
                 alt="Justin Ragland"
                 className="w-32 h-32 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-xl object-cover border border-gray-200 dark:border-gray-700 shadow-sm"
               />
@@ -40,9 +42,31 @@ export default function AboutSection() {
                     href="https://www.raglandlabs.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="font-medium text-inherit hover:text-purple-600 dark:hover:text-purple-400 transition-colors rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/40 focus-visible:ring-offset-1 focus-visible:ring-offset-white dark:focus-visible:ring-offset-[#23242f]"
+                    className="relative inline-block font-medium text-inherit hover:text-purple-600 dark:hover:text-purple-400 transition-colors rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/40 focus-visible:ring-offset-1 focus-visible:ring-offset-white dark:focus-visible:ring-offset-[#23242f]"
                   >
                     Ragland Labs
+                    <motion.span
+                      className="absolute inset-0 block pointer-events-none select-none text-purple-600 dark:text-[#a097cc]"
+                      initial={{ backgroundPosition: "150% 0" }}
+                      whileInView={{ backgroundPosition: "-50% 0" }}
+                      viewport={{ once: false }}
+                      transition={{
+                        delay: 1.2,
+                        repeat: Infinity,
+                        repeatDelay: 6.5,
+                        duration: 2.5,
+                        ease: "linear"
+                      }}
+                      style={{
+                        backgroundImage: "linear-gradient(110deg, transparent 35%, currentColor 50%, transparent 65%)",
+                        backgroundSize: "250% 100%",
+                        WebkitBackgroundClip: "text",
+                        backgroundClip: "text",
+                        WebkitTextFillColor: "transparent"
+                      }}
+                    >
+                      Ragland Labs
+                    </motion.span>
                   </a>.
                   I enjoy working with startups, teams, and individuals to build software that’s thoughtful, scalable, and genuinely useful.
                 </p>
