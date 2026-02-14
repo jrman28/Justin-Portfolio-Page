@@ -37,7 +37,7 @@ export default function AboutSection() {
               </h2>
               <div className="text-base sm:text-lg text-primary dark:text-gray-100 font-normal leading-relaxed space-y-4">
                 <p>
-                  I’m Justin Ragland, a full stack developer focused on turning complex ideas into clear, usable products — and founder of{" "}
+                  I’m Justin Ragland, a product engineer focused on turning complex ideas into clear, usable products — and founder of{" "}
                   <a 
                     href="https://www.raglandlabs.com"
                     target="_blank"
