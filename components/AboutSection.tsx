@@ -46,7 +46,7 @@ export default function AboutSection() {
                   >
                     Ragland Labs
                     <motion.span
-                      className="absolute inset-0 block pointer-events-none select-none text-purple-600 dark:text-[#a097cc]"
+                      className="absolute inset-0 block pointer-events-none select-none text-purple-600 dark:text-[#d8b4fe]"
                       initial={{ backgroundPosition: "150% 0" }}
                       whileInView={{ backgroundPosition: "-50% 0" }}
                       viewport={{ once: false }}

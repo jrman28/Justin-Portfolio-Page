@@ -43,7 +43,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light leading-relaxed max-w-[65ch] mb-8 md:mb-10">
-            I'm Justin Ragland, a Full Stack Developer crafting seamless web
+            I'm Justin Ragland, a Product Engineer crafting seamless web
             experiences with modern tools. Deploying clean, scalable code for
             your next big idea.
           </p>

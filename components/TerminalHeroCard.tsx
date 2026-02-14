@@ -6,7 +6,7 @@ export default function TerminalHeroCard() {
 
   const codeSnippet = `const stack = new Developer({
   name: "Justin Ragland",
-  role: "Agentic Engineer",
+  role: "Product Engineer",
   skills: [
     "React",
     "TypeScript",
@@ -116,7 +116,7 @@ export default function TerminalHeroCard() {
 <span className="text-green-600 dark:text-[#c3e88d]">"Justin Ragland"</span>,
 {"\n"}  <span className="text-gray-500 dark:text-slate-400">role:</span>{" "}
 <span className="text-green-600 dark:text-[#c3e88d]">
-  "Agentic Engineer"
+  "Product Engineer"
 </span>,
 {"\n"}  <span className="text-gray-500 dark:text-slate-400">skills:</span> [
 {"\n"}    <span className="text-green-600 dark:text-[#c3e88d]">"React"</span>,
