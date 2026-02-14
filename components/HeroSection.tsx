@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import TerminalHeroCard from "./TerminalHeroCard";
@@ -43,9 +44,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light leading-relaxed max-w-[65ch] mb-8 md:mb-10">
-            I'm Justin Ragland, a Product Engineer crafting seamless web
-            experiences with modern tools. Deploying clean, scalable code for
-            your next big idea.
+            I'm Justin Ragland, a Product Engineer. I build unified software experiences across web, mobile, and intelligent systems. Deploying clean, reliable code that scales with your business.
           </p>
 
           {/* NPX Command CTA */}
