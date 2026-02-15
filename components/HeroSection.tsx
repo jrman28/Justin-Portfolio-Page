@@ -44,7 +44,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light leading-relaxed max-w-[65ch] mb-8 md:mb-10">
-            I'm Justin Ragland, a Product Engineer. I build unified software experiences across web, mobile, and intelligent systems. Deploying clean, reliable code that scales with your business.
+            I'm Justin Ragland, a product engineer. I build unified software experiences across web, mobile, and intelligent systems. Deploying clean, reliable code that scales with your business.
           </p>
 
           {/* NPX Command CTA */}
