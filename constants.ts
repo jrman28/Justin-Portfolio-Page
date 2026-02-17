@@ -1,3 +1,4 @@
+
 import { Project } from './types';
 
 export const projects: Project[] = [
@@ -14,10 +15,10 @@ export const projects: Project[] = [
     link: "https://bitflip-arcade-demo.pages.dev/"
   },
   {
-    title: "AegisOps",
-    description: "An internal operations console for managing access requests, approvals, and audit trails with clear role-based workflows.",
-    tags: ["React", "TypeScript", "Tailwind"],
-    link: "#"
+    title: "The Kennedy",
+    description: "A bespoke booking platform for a luxury rental collection, combining immersive storytelling with a streamlined reservation flow.",
+    tags: ["React", "Tailwind", "Framer Motion"],
+    link: "https://www.bookthekennedy.com"
   },
   {
     title: "ArbiterAI",
