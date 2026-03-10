@@ -3,10 +3,10 @@ import { Project } from './types';
 
 export const projects: Project[] = [
   {
-    title: "LedgerLane",
-    description: "A workflow-driven billing and reconciliation platform for logistics teams, built to reduce invoice disputes and speed up month-end close.",
-    tags: ["React", "Convex", "TypeScript"],
-    link: "https://ledger-lane-demo.pages.dev"
+    title: "The Signal",
+    description: "AI-powered intelligence briefing system. Transforms dense documents into executive-level synthesis.",
+    tags: ["React", "AI", "TypeScript"],
+    link: "https://the-signal.pages.dev/"
   },
   {
     title: "BitFlip",
