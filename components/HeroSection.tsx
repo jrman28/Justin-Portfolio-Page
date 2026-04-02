@@ -34,17 +34,17 @@ export default function HeroSection() {
           className="relative z-10 flex flex-col justify-center order-1 w-full max-w-[92vw] sm:max-w-xl mx-auto lg:mx-0 lg:max-w-none"
         >
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[0.95] tracking-tighter text-primary dark:text-white mb-6 md:mb-8">
-            Building <br />
-            <span 
+            The <br />
+            <span
               className="inline-block text-secondary dark:text-[#a097cc] [text-shadow:0_6px_16px_rgba(126,120,156,0.25),0_1px_2px_rgba(0,0,0,0.05)] dark:[text-shadow:0_0_24px_rgba(160,151,204,0.3),0_4px_12px_rgba(0,0,0,0.5)] transition-all duration-300"
             >
-              digital
+              builder
             </span> <br />
-            products.
+            is the standard.
           </h1>
 
           <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light leading-relaxed max-w-[65ch] mb-8 md:mb-10">
-            I'm Justin Ragland, a product engineer. I build unified software experiences across web, mobile, and intelligent systems. Deploying clean, reliable code that scales with your business.
+            I'm Justin Ragland — founder of Ragland Labs. I build personal software, intelligent systems, and autonomous assistants for founders and operators who've outgrown generic tools. Based in Huntsville, AL.
           </p>
 
           {/* NPX Command CTA */}

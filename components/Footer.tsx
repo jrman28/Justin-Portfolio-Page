@@ -16,7 +16,7 @@ const Footer = () => {
           <div>
             <p className="text-xs text-gray-400 mb-2">© {currentYear} Justin Ragland</p>
             <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xs">
-              Building better software, one commit at a time.
+              Software built to last. · <a href="https://raglandlabs.com" target="_blank" rel="noreferrer" className="hover:text-primary dark:hover:text-white transition-colors">raglandlabs.com</a>
             </p>
           </div>
           <div className="flex flex-col space-y-4 md:items-end">

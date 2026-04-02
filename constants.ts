@@ -21,9 +21,9 @@ export const projects: Project[] = [
     link: "https://www.bookthekennedy.com"
   },
   {
-    title: "ArbiterAI",
-    description: "An AI finance agent that reviews vendor bills, flags anomalies, and drafts approvals with citations tied to policies, contracts, and prior spend.",
-    tags: ["AI SDK", "Claude SDK", "Convex", "React"],
-    link: "#"
+    title: "Alabama IQ",
+    description: "An AI intelligence digest for Huntsville/Madison County professionals — defense contracts, EDPA moves, commercial real estate, and tech hiring signals, ranked by impact and delivered before your first meeting.",
+    tags: ["AI", "React", "Convex", "TypeScript"],
+    link: "https://alabamaiq.com"
   }
 ];
